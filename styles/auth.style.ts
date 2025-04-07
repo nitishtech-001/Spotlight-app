@@ -1,5 +1,5 @@
 import { COLORS } from "@/constants/theme";
-import { StyleSheet, Dimensions } from "react-native";
+import { StyleSheet, Dimensions, Button } from "react-native";
 const { width, height } = Dimensions.get("window");
 
 
@@ -19,7 +19,7 @@ export const authStyle = StyleSheet.create({
     backgroundColor: "rgba(74, 222, 128, 0.15)",
     justifyContent : "center" ,
     alignItems : "center",
-    marginBottom : 14
+    marginBottom : 8
   },
   appName : {
     fontSize : 42,
@@ -27,7 +27,7 @@ export const authStyle = StyleSheet.create({
     fontFamily : "JetBrainsMono-Medium",
     color : COLORS.primary,
     letterSpacing : 0.5,
-    marginBottom : 8,
+    marginBottom : 2,
   },
   tagLine : {
     fontSize : 16,
@@ -48,6 +48,7 @@ export const authStyle = StyleSheet.create({
     backgroundColor : "white",
     color : COLORS.black,
     borderRadius : 10,
+    paddingLeft : 15,
     marginBottom : 8
   },
   title: {
@@ -56,8 +57,27 @@ export const authStyle = StyleSheet.create({
   image: {
     width: 200,
     height: 200,
-    margin: 30,
+    margin: 10,
     backgroundColor: "black",
     objectFit: "contain",
   },
 });
+
+export const verifyEmail = StyleSheet.create({
+  innerContainer : {
+    display: "flex",
+    alignItems: "center",
+   marginTop : 100
+  },
+  verifyText : {
+    fontSize: 20,
+    color: "white",
+
+  },
+  button : {
+    height : 40,
+    backgroundColor: "grey",
+    borderRadius: 10,
+    padding: 4
+  }
+})
