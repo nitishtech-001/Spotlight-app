@@ -7,7 +7,7 @@ export  default defineSchema({
 		fullname : v.string(),
 		email : v.string(),
 		bio : v.optional(v.string()),
-		avatar : v.string() || "https://www.defaultAvatarUrl.png",
+		avatar : v.string(),
 		followers : v.number(),
 		following : v.number(),
 		posts : v.number(),
